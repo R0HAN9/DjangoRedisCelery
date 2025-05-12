@@ -1,0 +1,24 @@
+healthremainder/                  # Django project root
+├── healthremainder/             # Project config folder
+│   ├── __init__.py              # Initializes Celery
+│   ├── settings.py              # Main settings
+│   ├── urls.py                  # URL routing
+│   ├── wsgi.py                  # WSGI entry point
+│   └── celery.py                # Celery configuration
+│
+├── healthapp/                   # Core app for health reminders
+│   ├── migrations/              # Django migration files
+│   ├── __init__.py
+│   ├── admin.py                 # Optional: Django admin panel setup
+│   ├── apps.py
+│   ├── models.py                # Patient and Reminder models
+│   ├── serializers.py           # DRF serializers
+│   ├── tasks.py                 # Celery tasks (reminder checker)
+│   ├── tests.py                 # Optional: unit tests
+│   ├── urls.py                  # App-specific routes
+│   └── views.py                 # DRF viewsets
+│
+├── manage.py                    # Django entry point
+├── requirements.txt             # Project dependencies
+├── .env                         # Environment variables
+└── README.md                    # usage and setup guide
